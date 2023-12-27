@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <div class="background">
+        <div class="inside">
+            <div class="visor">
+                <p id="visor_text">0</p>
+            </div>
+            <div class="buttons">
+                <button onclick="clearAll()">AC</button>
+                <button class="void_button"></button>
+                <button class="void_button"></button>
+                <button onclick="clearVisor()">C</button>
+                <button onclick="number('7')">7</button>
+                <button onclick="number('8')">8</button>
+                <button onclick="number('9')">9</button>
+                <button onclick="divide()">/</button>
+                <button onclick="number('4')">4</button>
+                <button onclick="number('5')">5</button>
+                <button onclick="number('6')">6</button>
+                <button onclick="multiply()">x</button>
+                <button onclick="number('1')">1</button>
+                <button onclick="number('2')">2</button>
+                <button onclick="number('3')">3</button>
+                <button onclick="minus()">-</button>
+                <button onclick="number('0')">0</button>
+                <button onclick="insertDot()">.</button>
+                <button onclick="plus()">+</button>
+                <button onclick="equal()" id="equal_button">=</button>
+            </div>
+        </div>
+    </div>
+  </body>
+</html>
