@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor Dec/Bin</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Conversor Dec/Bin</h1>
+    <div class="container">  
+        <div class="box">
+            <div class="field">
+                <label for="input">Decimal:</label>
+                <input type="number" step="1" id="inputDec" onchange="convertToBin()" class="input">
+            </div>
+            <div class="field">
+                <label for="conversor">Binário:</label>
+                <input type="number" id="inputBin" onchange="convertToDec()" class="input">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
