@@ -1,0 +1,191 @@
+*{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    margin:0;
+    background-color: rgb(10, 10, 58);
+}
+
+h1, a, label, p{
+    color: antiquewhite;
+}
+
+header{
+    text-align: center;
+}
+
+header h1{
+    margin-top: 5vh;
+}
+
+.header_links{
+    width: 34em;
+    margin: 0.5em auto 0;
+    padding-top: 10px;
+    border-top: 1px solid antiquewhite;
+}
+
+.generator_container{
+    display: flex;
+    position: relative;
+    flex-flow:column wrap;
+    align-items: center;
+    justify-content: center;
+    margin: 50px 0 50px 0;
+}
+
+.generator{
+    height: 50vmin;
+    width: 50vmin;
+    border: 0.2vmin dashed antiquewhite;
+    overflow: hidden;
+}
+
+.generator_shape{
+    height: 50vmin;
+    width: 50vmin;
+    background-image: linear-gradient(45deg, #491d88, #903495, #ff0076);
+    border-radius: 0% 0% 0% 0% / 0% 0% 0% 0% ;
+}
+
+.generator_controllers{
+    position: absolute;
+    height: 52vmin;
+    width: 52vmin;
+}
+
+.controller1, 
+.controller2, 
+.controller3, 
+.controller4{
+    appearance: none;
+    cursor: pointer;
+    display: block;
+    position: absolute;
+    cursor: pointer;
+    width: 52vmin;
+    margin:0;
+    background: transparent;
+}
+
+.controller1::-webkit-slider-thumb, 
+.controller2::-webkit-slider-thumb, 
+.controller3::-webkit-slider-thumb, 
+.controller4::-webkit-slider-thumb{
+    appearance: none;
+    width: 1rem;
+    height: 1rem;
+    background: #FFF;
+    transition: 100ms;
+    border: 1px solid black;
+    border-radius: 0;
+    cursor: pointer;
+}
+
+.controller1::-webkit-slider-thumb:hover, 
+.controller2::-webkit-slider-thumb:hover, 
+.controller3::-webkit-slider-thumb:hover, 
+.controller4::-webkit-slider-thumb:hover{
+    background: #01c4e7;
+}
+
+.controller1{
+    z-index: 999;
+    top:0;
+}
+
+.controller2{
+    z-index: 996;
+    transform: translateX(48%) translateY(15%) rotate(90deg); /* Gira o controle deslizante */
+    top:24.5vmin;
+    right:0;
+}
+
+.controller3{
+    z-index: 997;
+    transform: rotate(180deg);
+    bottom:0;
+}
+
+.controller4{
+    z-index: 998;
+    transform: translateX(-48%) translateY(-15%) rotate(270deg); /* Gira o controle deslizante */
+    bottom:24.5vmin;
+}
+
+.settings_container{
+    text-align: center;
+}
+
+.output{
+    margin-bottom: 40px;
+}
+
+.output input{
+    width: 280px;
+    height: 40px;
+    text-align: center;
+    background-color: rgb(212, 212, 212);
+    border: 1px solid rgb(212, 212, 212);
+    border-radius: 4px;
+}
+
+.output button{
+    width: 70px;
+    height: 40px;
+    color:antiquewhite;
+    background-color: #ff0076;
+    border: 1px solid #ff0076;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 0;
+    transition: 0.2s ease-in;
+}
+
+.output button:hover{
+    background-color: #491d88;
+    border: 1px solid #491d88;
+}
+
+.advanced p{
+    margin:0;
+    width: 12em;
+    display: inline-block;
+}
+
+.advanced_switch{
+    display: inline-block;
+    height: 17px;
+    width: 40px;
+    padding-left: 2px;
+    border: 1px solid black;
+    background-color: rgb(212, 212, 212);
+    border-radius: 20px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.advanced_check{
+    height: 11px;
+    width: 11px;
+    border: 1px solid black;
+    background-color: rgb(31, 0, 25);
+    border-radius: 300px;
+    margin: 2px 0 2px 0;
+    transition: 200ms;
+}
+
+.advanced_settings{
+    margin:0;
+    display: inline-block;
+    visibility: hidden;
+    opacity: 0;
+    transition: 200ms;
+}
+
+.advanced_settings input{
+    width: 70px;
+    height: 35px;
+}
