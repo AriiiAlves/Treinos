@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luzes de natal</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="main" id="line5">
+        <div class="circle red"></div>
+        <div class="circle orange"></div>
+        <div class="circle yellow"></div>
+        <div class="circle green"></div>
+        <div class="circle blue"></div>
+        <div class="circle darkblue"></div>
+        <div class="circle purple"></div>
+    </div>
+    <div class="main" id="line4">
+        <div class="circle red"></div>
+        <div class="circle orange"></div>
+        <div class="circle yellow"></div>
+        <div class="circle green"></div>
+        <div class="circle blue"></div>
+        <div class="circle darkblue"></div>
+        <div class="circle purple"></div>
+    </div>
+    <div class="main" id="line3">
+        <div class="circle red"></div>
+        <div class="circle orange"></div>
+        <div class="circle yellow"></div>
+        <div class="circle green"></div>
+        <div class="circle blue"></div>
+        <div class="circle darkblue"></div>
+        <div class="circle purple"></div>
+    </div>
+    <div class="main" id="line2">
+        <div class="circle red"></div>
+        <div class="circle orange"></div>
+        <div class="circle yellow"></div>
+        <div class="circle green"></div>
+        <div class="circle blue"></div>
+        <div class="circle darkblue"></div>
+        <div class="circle purple"></div>
+    </div>
+    <div class="main" id="line1">
+        <div class="circle red"></div>
+        <div class="circle orange"></div>
+        <div class="circle yellow"></div>
+        <div class="circle green"></div>
+        <div class="circle blue"></div>
+        <div class="circle darkblue"></div>
+        <div class="circle purple"></div>
+    </div>
+    <div class="controls">
+        <button class="on_off_button" onclick="On()">On</button>
+        <button class="on_off_button" onclick="Off()">Off</button>
+        <label for="time_input">Intervalo de tempo (s):</label>
+        <input type="number" min="0" max="5" step="0.1" class="input" id="time_input">
+        <button class="submit" onclick="changeTime()">Go</button>
+    </div>
+    <div class="advanced">
+        <ul class="color_picker" id="color_picker">
+            <li onclick="changeColor(0)"></li>
+            <li onclick="changeColor(1)"></li>
+            <li onclick="changeColor(2)"></li>
+            <li onclick="changeColor(3)"></li>
+            <li onclick="changeColor(4)"></li>
+            <li onclick="changeColor(5)"></li>
+            <li onclick="changeColor(6)"></li>
+        </ul>
+        <!-- Não funciona adequadamente
+        <ul class="size_picker">
+            <li><input type="number" min="1" max="10" onchange="changeSize(0)" id="size_input_0"></li>
+            <li><input type="number" min="1" max="10" onchange="changeSize(1)" id="size_input_1"></li>
+            <li><input type="number" min="1" max="10" onchange="changeSize(2)" id="size_input_2"></li>
+            <li><input type="number" min="1" max="10" onchange="changeSize(3)" id="size_input_3"></li>
+            <li><input type="number" min="1" max="10" onchange="changeSize(4)" id="size_input_4"></li>
+            <li><input type="number" min="1" max="10" onchange="changeSize(5)" id="size_input_5"></li>
+            <li><input type="number" min="1" max="10" onchange="changeSize(6)" id="size_input_6"></li>
+        </ul>
+        -->
+        <div class="others">
+            <label for="intensity_input">Intensidade:</label>
+            <input type="number" min="1" max="10" class="input" id="intensity_input">
+            <button class="submit" onclick="changeIntensity()">Go</button>
+        </div>
+        <div class="others">
+            <label for="rows_input">Número de linhas:</label>
+            <input type="number" min="1" max="5" class="input" id="rows_input">
+            <button class="submit" onclick="changeLines()">Go</button>
+        </div>
+    </div>
+</body>
+</html>

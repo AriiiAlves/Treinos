@@ -8,6 +8,7 @@ function check(){
     if(settings.style.visibility == 'hidden' || settings.style.visibility == ''){
         check.style.marginLeft = '22px';
         check.style.backgroundColor = '#ff0076';
+        check.style.borderColor = '#ff0076';
         settings.style.visibility = 'visible';
         settings.style.opacity = 1;
 
@@ -25,6 +26,9 @@ function check(){
         let height = document.getElementById('height');
 
         check.style.marginLeft = '1px';
+        check.style.backgroundColor = 'rgb(31, 0, 25)';
+        check.style.borderColor = 'rgb(31, 0, 25)';
+
         settings.style.visibility = 'hidden';
         settings.style.opacity = 0;
 
